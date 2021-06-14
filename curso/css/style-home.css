@@ -1,0 +1,115 @@
+body {
+	
+}
+header {
+    background: #bbbbbb;
+    padding: 20px;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+#missao {
+	font-size: 20px
+}
+
+#banner {
+	width: 60%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.principal{
+	background: #cccccc;
+	padding: 30px;
+}
+.principal .titulo-centralizado{
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+p {
+	text-align: center
+}
+
+.titulo-centralizado {
+	text-align: center;
+}
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+.beneficios .titulo-centralizado {
+	font-size: 17px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+
+.itens{
+	font-style: italic;
+}
+
+
+.imagem-beneficios {
+	width: 40%;
+}
+
+.beneficios ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 20%;
+	margin-left: 10%;
+}
+
+em strong {
+	color: #FF0000;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 20px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}

@@ -1,0 +1,312 @@
+body {
+    font-family: 'Milonga', cursive;
+    background-blend-mode: luminosity;
+}
+
+header {
+    background: #bbbbbb;
+    padding: 20px;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: chocolate;
+    text-decoration: underline;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+    padding: 30px 20px 30px 20px;
+    box-sizing: border-box;
+    margin: 10px 1.2% 10px 1.2%;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.produtos li:hover {
+   border: solid 2px chocolate;
+}
+
+.produtos li:active{
+    border: solid 2px green;
+}
+
+.produtos li:hover h2{
+    font-size: 32px;
+}
+
+.produtos li:hover .preco{
+    color: red;
+    font-size: 25px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.descricao{
+    font-size: 18px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: baseline;
+    margin-top: 10px;
+}
+
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 20px 0;
+}
+
+footer p{
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+form label, form legend{
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.input-padrao{
+    padding: 10px 50px;
+    width: 50%;
+    
+}
+
+.submit{
+    display: block;  
+    width: 40%;
+    margin: 20px 0;
+    padding: 15px 0;
+    background: darkorange;
+    color: white;
+    font-weight:  bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: turquoise;
+    transform: scale(1.2) rotate(-20deg);
+    
+}
+
+.checkbox {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: grey;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+td, th {
+    border: solid;
+    border-color: black;
+    padding: 15px 8px;
+    width: 20%;
+}
+
+/* CSS da página inicial */
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+
+.banner {
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 ;
+    clear: left;
+}
+
+.titulo-principal::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 1em 0 ;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+    
+}
+
+.beneficios .strong{
+    font-weight: bold;
+}
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.itens{
+    line-height: 2em;
+}
+
+.itens::before{
+    content: "✂ ";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 0.8;
+    /*A sombra tem os seguintes elementos, eixo X, eixo Y, espalhamento, tamanho do espalhamento e a cor*/
+    box-shadow: 10px 10px 5px 2px rgba(0,0, 0, 0.3);
+    /*position: static;
+    float: right;
+    vertical-align: top;
+    margin: 0 100px 30px 0;*/
+}
+
+.imagem-beneficios:hover{
+    opacity: 1;
+    transition: 1000ms;
+    box-shadow:none;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+   
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 4em auto;
+    opacity: 0.8;
+}
+
+.video:hover{
+    opacity: 1;
+    transition: 1000ms;
+}
+
+.mapa-mapa{
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-mapa, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+}
+
+/*Para selecionar o elemento <p> subsequente ao main
+main > p {
+
+}*/
+
+/*Como selecionar o primeiro elemento depois de determinada tag, por exemplo, aqui estou selecionando
+o primeiro <p> após uma <img> que está dentro da classe .principal. Nesse caso, se existisse outra imagem, sempre o primeiro elemento seria selecionado.
+.principal img + p{
+    background: red;
+}*/
